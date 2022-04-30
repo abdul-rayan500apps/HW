@@ -1,16 +1,26 @@
 <template>
   <div id="app">
     <router-view/>
+    <SlotchilD> <h2 slot="title">{{quotetitle}}</h2>
+              <p slot="content">A wonderful Quote</p></SlotchilD>
+              
   </div>
 </template>
 
 <script>
+import SlotchilD from "@/components/props/slotchild";
 export default {
-  name: 'App',
+  name: "App",
+  data(){
+    return{
+      quotetitle:'The Quote'
+    }
+  },
+
   components: {
-    
-  }
-}
+    SlotchilD,
+  },
+};
 </script>
 
 <style>
