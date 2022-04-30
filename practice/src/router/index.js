@@ -9,6 +9,7 @@ import HomE from '@/components/Home'
 import TemplatE from '@/components/Templates'
 import ParenT from '@/components/props/parent'
 import ParentemiT from '@/components/props/parentemit'
+//import QuotE from '@/components/slotparent'
 
 vue.use (Router)
 
@@ -30,6 +31,8 @@ const routes = [
     {path:'/parent',name:"ParenT",component:ParenT},
 
     {path:'/emit',name:"ParentemiT",component:ParentemiT},
+
+    //{path:'/quote',name:"QuotE",component:QuotE},
 ]
 
 
